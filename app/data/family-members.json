@@ -1,0 +1,22 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "image": "/family/alice.jpg",
+      "label": "Daughter"
+    },
+    {
+      "id": 2,
+      "name": "Júlia",
+      "image": "/family/julia.jpg",
+      "label": "Mother"
+    },
+    {
+      "id": 3,
+      "name": "Matheus",
+      "image": "/family/matheus.jpg",
+      "label": "Father"
+    }
+  ]
+} 
