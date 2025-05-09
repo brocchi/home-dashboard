@@ -11,3 +11,64 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom FullCalendar styles */
+.fc {
+  --fc-border-color: #e2e8f0;
+  --fc-button-text-color: #4b5563;
+  --fc-button-bg-color: #f3f4f6;
+  --fc-button-border-color: #e5e7eb;
+  --fc-button-hover-bg-color: #e5e7eb;
+  --fc-button-hover-border-color: #d1d5db;
+  --fc-button-active-bg-color: #d1d5db;
+  --fc-button-active-border-color: #9ca3af;
+  --fc-event-bg-color: #818cf8;
+  --fc-event-border-color: #6366f1;
+  --fc-today-bg-color: #f3f4f6;
+  --fc-neutral-bg-color: #ffffff;
+  --fc-list-event-hover-bg-color: #f3f4f6;
+  --fc-highlight-color: rgba(188, 232, 241, 0.3);
+  --fc-today-bg-color: rgba(129, 140, 248, 0.1);
+  --fc-page-bg-color: transparent;
+}
+
+.fc .fc-button {
+  @apply text-sm font-medium rounded-lg px-4 py-2;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  @apply bg-purple-100 border-purple-200 text-purple-800;
+}
+
+.fc .fc-day-today {
+  @apply bg-purple-50;
+}
+
+.fc .fc-event {
+  @apply rounded-lg border-0 shadow-sm;
+}
+
+.fc .fc-event-title {
+  @apply font-medium;
+}
+
+.fc .fc-col-header-cell {
+  @apply bg-purple-50/50;
+}
+
+.fc .fc-daygrid-day-number {
+  @apply text-gray-600;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  @apply bg-purple-50/50;
+}
+
+.fc .fc-daygrid-event {
+  @apply bg-purple-100 border-purple-200 text-purple-800;
+}
+
+.fc .fc-daygrid-more-link {
+  @apply text-purple-600 bg-purple-50 rounded-full px-2 py-0.5 text-xs;
+}
